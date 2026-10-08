@@ -1,0 +1,7 @@
+{
+  "name": "RadScheduler Pro",
+  "description": "Enterprise Radiologist, Radiology Management, and Advanced Practitioner scheduling system with real-time conflict detection and clinical telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-serif: "Times New Roman", Times, Georgia, serif;
+}
+
+:root, [data-theme="dark"] {
+  /* Variation 10: 25% lighter clinical slate dashboard */
+  --bg: #2e313a;
+  --panel: #3d414d;
+  --card: #3d414d;
+  --card-hover: #484d5b;
+  --panel-hover: #484d5b;
+  --ink: #fdfdfd;
+  --ink-secondary: rgba(255, 255, 255, 0.65);
+  --ink-muted: rgba(255, 255, 255, 0.65);
+  --accent: #a0c9eb;
+  --accent-hover: #8eb9dd;
+  --border: rgba(255, 255, 255, 0.18);
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-focus: #a0c9eb;
+  --sidebar-width: 280px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: #000000;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--ink);
+}
+
+.brand, .font-brand {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.font-secondary, .font-serif {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-primary, .font-geist {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-mono {
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.meta-mono, .section-label {
+  font-family: monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-muted);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.35);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* Modal & Popup Window Theme: 25% Lighter Background & Enhanced High-Contrast Readability */
+.modal-window,
+.fixed.inset-0 .bg-\[\#1c1c1f\],
+.fixed.inset-0 .bg-\[\#1f232c\],
+.fixed.inset-0 .bg-\[\#16181e\],
+.fixed.inset-0 .bg-\[\#25252a\] {
+  background-color: #434856 !important;
+  color: #fdfdfd !important;
+  border-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+.modal-header,
+.fixed.inset-0 .bg-\[\#111113\],
+.fixed.inset-0 .bg-\[\#27272c\],
+.fixed.inset-0 .bg-\[\#191c23\] {
+  background-color: #4e5465 !important;
+  border-color: rgba(255, 255, 255, 0.20) !important;
+  color: #ffffff !important;
+}
+
+.modal-footer {
+  background-color: #4a5060 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.20) !important;
+}
+
+.modal-surface,
+.fixed.inset-0 .bg-\[\#242429\],
+.fixed.inset-0 .bg-\[\#18181b\] {
+  background-color: #383d4c !important;
+  border-color: rgba(255, 255, 255, 0.20) !important;
+  color: #fdfdfd !important;
+}
+
+.modal-input,
+.fixed.inset-0 input:not([type="checkbox"]):not([type="radio"]),
+.fixed.inset-0 select,
+.fixed.inset-0 textarea {
+  background-color: #313542 !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+.modal-input:focus,
+.fixed.inset-0 input:focus,
+.fixed.inset-0 select:focus,
+.fixed.inset-0 textarea:focus {
+  border-color: #a0c9eb !important;
+  outline: none !important;
+}
+
+.modal-label,
+.fixed.inset-0 label {
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+}
+
+.fixed.inset-0 .text-slate-400,
+.fixed.inset-0 .text-\[rgba\(238\,237\,234\,0\.5\)\],
+.fixed.inset-0 .text-\[rgba\(238\,237\,234\,0\.6\)\],
+.fixed.inset-0 .text-\[rgba\(238\,237\,234\,0\.7\)\] {
+  color: #d1d5db !important;
+}
+
+.fixed.inset-0 .text-\[rgba\(238\,237\,234\,0\.8\)\],
+.fixed.inset-0 .text-\[rgba\(238\,237\,234\,0\.9\)\],
+.fixed.inset-0 .text-\#eeedea {
+  color: #ffffff !important;
+}
